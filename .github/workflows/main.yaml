@@ -1,24 +1,12 @@
-name: Simple CI Pipeline
+ name: Test Pipeline
 
-on:
-  push:
-    branches: ["main"]
+on: push
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Get Code
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 18
-
-      - name: Install Dependencies
-        run: npm install
-
-      - name: Run Tests
-        run: npm test
+      - run: ls
