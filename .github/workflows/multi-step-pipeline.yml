@@ -5,8 +5,7 @@ on:
     branches:
       - main
 
-jobs:
-  step-demo:             # This is the job ID
+jobs:           # This is the job ID
     runs-on: ubuntu-latest # Shifted 2 spaces right
     steps:               # Shifted 2 spaces right
       - name: step 1
