@@ -1,4 +1,4 @@
-name: multi step pipeline
+name: multi step pipelin
 on:
   push:
      branches:
