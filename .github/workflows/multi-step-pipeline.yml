@@ -1,10 +1,11 @@
-name: multi step pipeline
 
+name: multi step pipelin
+ 
 on:
   push:
     branches:
       - main
-
+ 
 jobs:
   demo-job:              # <--- You need this Job ID!
     runs-on: ubuntu-latest 
@@ -17,3 +18,5 @@ jobs:
 
       - name: step 3
         run: echo "This is step 3"
+ 
+ 
