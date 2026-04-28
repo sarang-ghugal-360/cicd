@@ -2,12 +2,13 @@ name: sarang checking
 
   on:
     push:
-    branches:
-    - main
+     branches:
+      - main
 
-      jobe:
+  jobe:
       sarang:
-      runs-on: ubuntu-latest
+        runs-on: ubuntu-latest
+          steps:
 
-      - name: sarang checking
-        eacho: sarang
+           - name: sarang checking
+            eacho: sarang
