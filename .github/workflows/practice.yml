@@ -1,0 +1,13 @@
+name: sarang checking
+
+  on:
+    push:
+    branches:
+    - main
+
+      jobe:
+      sarang:
+      runs-on: ubuntu-latest
+
+      - name: sarang checking
+        eacho: sarang
