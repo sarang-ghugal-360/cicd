@@ -1,0 +1,16 @@
+apiVersion: app/v1
+kind: Deployment
+metadata:
+ name: depolyment-nginx
+ namespace: my-qpp
+spec :
+replicas: 3
+selector:
+  matchlabels:
+   app:nginx
+spec:
+containers:
+ -name : nginx-container
+  image: nginx:latest
+  ports:
+  -containerport:80

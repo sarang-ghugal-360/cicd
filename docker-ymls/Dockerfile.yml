@@ -1,5 +1,5 @@
 FROM openjdk:17
 WORKDIR /app
-COPY ..
+COPY .. .
 RUN javac main java
-CMD ["java" "main"]
+CMD ["java", "main"]
