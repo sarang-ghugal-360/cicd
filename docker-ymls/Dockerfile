@@ -50,3 +50,40 @@
 # EXPOSE 3000
 # CMD ["node","app.js"]
 
+
+
+
+#   29-05-2026
+
+# FROM python:3-10-slim
+# WORKDIR /app
+# COPY requirement.txt 
+# RUN pip install requirememt.txt
+# COPY ..
+# EXPOSE 5000
+# CMD ["python", "appy.py"]
+
+
+
+# FROM python:3-10
+# WORKDIR /app
+# COPY requirement.txt
+# RUN pip install -r 
+# COPY ..
+# EXPOSE 8000
+# CMD ["python", "appy.py"]
+
+
+# FROM python:3.10
+# WORKDIR /app
+# COPY  requirement.txt
+# RUN pip install -r requirement.txt
+# CMD ["python", "script.py"]
+
+
+
+# FROM  openjdk:17
+# WORKDIR /app
+# COPY target /app.jar app.jar
+# EXPOSE 8080
+# CMD ["java", "app.java"]
