@@ -1,4 +1,4 @@
-name: sarang hello program
+name: sarang hello progra
 on: push
 jobs:
   hello:
